@@ -1,0 +1,82 @@
+body {
+    background-color: #131313;
+    font-family: inter, Helvetica, sans-serif;
+    font-size: 8pt;
+    color: white;
+}
+
+.block {
+    background-color: #1b1919;
+    width: 400px;
+    height: 600px;
+    margin: 65px auto;
+    border-radius: 2.5%;
+}
+
+
+img {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    margin-top: -25px;
+}
+
+h2 {
+    text-align: center;
+    color: greenyellow;
+    font-size: 0.8rem;
+}
+
+p {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+p::before {
+    content: "\201C";
+}
+
+p::after {
+    content: "\201D";
+}
+
+.social {
+    display: block;
+    margin: auto;
+}
+
+.social > a {
+    background-color: #242222;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 10px auto;
+    border-radius: 15px;
+    width: 320px;
+    height: 50px;
+    display: flex;
+    vertical-align: center;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.social > a:active, .social > a:hover{
+    background-color: greenyellow;
+}
+
+@media (max-width: 375px) {
+    .block {
+        width: 350px;
+    }
+}
